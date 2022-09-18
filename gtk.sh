@@ -2,6 +2,7 @@
 
 wget https://github.com/dracula/gtk/archive/master.zip
 unzip master.zip
+mkdir ~/.themes/
 cp -r gtk-master ~/.themes/
 gsettings set org.cinnamon.theme name "gtk-master"
 gsettings set org.cinnamon.desktop.interface gtk-theme "gtk-master"
