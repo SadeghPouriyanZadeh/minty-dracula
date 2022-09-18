@@ -1,5 +1,9 @@
 #! /bin/bash
 
+
+if ![[""$XDG_CURRENT_DESKTOP"" == X-Cinnamon]]; then
+    echo "Your desktop is not X-Cinnamon."
+    exit
 wget https://github.com/dracula/gtk/archive/master.zip
 unzip master.zip
 mkdir ~/.themes/
